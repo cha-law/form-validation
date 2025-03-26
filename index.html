@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation | cha-law</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <form novalidate>
+        <h2>Create an account</h2>
+        <div class="section-wrapper">
+            <div class="inputs">
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </div>
+                <div>
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input type="password" id="confirm-pass">
+                </div>
+            </div>
+            <div></div>
+            <div class="inputs">
+                <div>
+                    <label for="country">Country</label>
+                    <input type="text" id="country">
+                </div>
+                <div>
+                    <label for="postcode">Post Code</label>
+                    <input type="text" id="postcode">
+                </div>
+            </div>
+        </div>
+        <button type="submit">Join Us</button>
+    </form>
+</body>
+</html>
