@@ -15,7 +15,8 @@ body {
 form {
     padding: 54px;
     background-color: #f7f7f7;
-    box-shadow: 2px 2px 10px #ccc;
+    box-shadow: 2px 2px 20px #ccc;
+    transition: 0.2s;
 }
 
 .inputs {
@@ -36,20 +37,23 @@ form > h2 {
 .inputs > div {
     display: flex;
     flex-direction: column;
+    transition: 0.2s;
 }
 
 .inputs > div > label {
-    padding: 6px 12px;
+    padding: 2px 8px 6px 12px;
     background-color: #222;
     color: white;
     font-weight: 700;
     width: fit-content;
+    transition: 0.2s;
 }
 
 .inputs > div > input {
     border: solid 2px #222;
     padding: 0.5rem;
     font-size: 1rem;
+    transition: 0.2s;
 }
 
 .inputs > div > input:focus {
@@ -65,4 +69,48 @@ form > button {
     background-color: #3b4358;
     color: white;
     font-weight: 700;
+    transition: 0.3s;
+}
+
+form > button:hover {
+    cursor: pointer;
+    background-color: #222;
+}
+
+
+div.error > label {
+    background-color: #a53c3c;
+}
+
+div.error > input {
+    border-color: #a53c3c;
+}
+
+div.passed > label {
+    background-color: #2a8147;
+}
+
+div.passed > input {
+    border-color: #2a8147;
+}
+
+span.error {
+    color: #bb7474;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transition: 0.2s;
+}
+
+span.active {
+    margin-top: 4px;
+    transition: 0.2s;
+}
+
+span.active label {
+    background-color: #a53c3c;
+}
+
+.red-required {
+    color: #bb7474;
+    font-size: 1.5rem;
 }

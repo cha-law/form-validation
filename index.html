@@ -14,27 +14,32 @@
         <div class="section-wrapper">
             <div class="inputs">
                 <div>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email">
+                    <label for="email">Email Address <span class="red-required"> *</span></label>
+                    <input type="email" id="email" required>
+                    <span class="error" id="error-email"></span>
                 </div>
                 <div>
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <label for="password">Password <span class="red-required"> *</span></label>
+                    <input type="password" id="password" required>
+                    <span class="error" id="error-pass"></span>
                 </div>
                 <div>
-                    <label for="confirm-pass">Confirm Password</label>
-                    <input type="password" id="confirm-pass">
+                    <label for="confirm-pass">Confirm Password <span class="red-required"> *</span></label>
+                    <input type="password" id="confirm-pass" required>
+                    <span class="error" id="error-confirm-pass"></span>
                 </div>
             </div>
             <div></div>
             <div class="inputs">
                 <div>
-                    <label for="country">Country</label>
-                    <input type="text" id="country">
+                    <label for="country">Country <span class="red-required"> *</span></label>
+                    <input type="text" id="country" required>
+                    <span class="error" id="error-country"></span>
                 </div>
                 <div>
-                    <label for="postcode">Post Code</label>
-                    <input type="text" id="postcode">
+                    <label for="postcode">Post Code <span class="red-required"> *</span></label>
+                    <input type="text" id="postcode" required>
+                    <span class="error" id="error-postcode"></span>
                 </div>
             </div>
         </div>
