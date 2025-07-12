@@ -26,8 +26,9 @@ form {
 }
 
 .section-wrapper {
-    display: grid;
-    grid-template-columns: 4fr 1fr 4fr;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
 form > h2 {
